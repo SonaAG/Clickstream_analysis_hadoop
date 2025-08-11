@@ -25,13 +25,13 @@ function App() {
       setRecentClicks(prev => [clickData, ...prev.slice(0, 4)]);
       
       // Log to server (you can uncomment this when your server is running)
-      /*
+      
       await fetch("http://localhost:5000/log", {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(clickData)
       });
-      */
+      
       
       console.log('Logged click:', clickData);
     } catch (error) {
